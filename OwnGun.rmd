@@ -50,6 +50,7 @@ $H_A$: there is a relationship between gun ownership and poitical views.
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
+>We will use the givin packages for our methods such as sources,dplyer,variable of interest,makeTables,gss,someplots,graphical method, barchartGC, chisqtestG and such.
 
 #Results
 
