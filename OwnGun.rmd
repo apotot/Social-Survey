@@ -14,11 +14,37 @@ source("Import_GSS_2014_haven.R")
 <!-- We recommend you use git branches -- create a separate branch for each major section i.e. Introduction, Methods, Results, Inferential Results, and Discussion and Conclusions - leave the YAML block untouched until the final merge where you put in your own name !-->
 
 # Introduction
-
-<!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->   
+<!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!--> 
 
 ####This study deals with questions about possible relationships between gun ownership and race, sex, political views, opinions on capitol punishment and belief in god. The data is from the 2014 general social survey.
+>In this project we are going to show the relationship between gun ownership base on race,sex,political views, opinions on capitol punishment and believe in God.The data is from 2014 general social survey. We will answer all the questions by showing the graph and data as well as the numerical results.
+We will base our study on the given packages we have on hand.
+>We will study the following hypothesis such as:
 
+First question: Is there a relationship between gun ownership and race? 
+
+$H_0$: there is no relationship between gun ownrship between gun ownership and race.
+$H_A$: there is a relationship between gun ownership and race.
+
+Second question: Is there a relationship between gun ownership and sex? 
+
+$H_0$: there is no relationship between gun ownership between gun ownership and sex.
+$H_A$: there is a relationship between gun ownership and sex. 
+
+Third question: Is there a relationship between gun ownership and opinion about capitol punishment?
+
+$H_0$: there is no relationship between gun ownership and the opinion about capital punishment..
+$H_A$: there is a relationship between gun ownership and opinion about capital punishment.
+
+Fourth question: Is there a relationship between gun ownership and belief in god? 
+
+$H_0$: there is no relationship between gun ownrship between gun ownership and belief in god.
+$H_A$: there is a relationship between gun ownership and the beief in god. 
+
+Fifth question: Is there a relationship between gun ownership and belief in god? 
+
+$H_0$: there is no relationship between gun ownrship between gun ownership and political views.
+$H_A$: there is a relationship between gun ownership and poitical views.
 
 
 # Methods
