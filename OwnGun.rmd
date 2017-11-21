@@ -57,10 +57,56 @@ $H_A$: there is a relationship between gun ownership and poitical views.
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
 ## Descriptive Results
+>Since the data is so large it must be narrowed down by using r code in a .R file. The GSS data displays 3842 observations so we use the dplyr package to extract 12 variables
 
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+>Gun Ownership vs. capitol punishment
+```{r}
+source("makeTables.R")
+source("someplots.R")
+barchartGC(cappun_table,type="percent")
+```
+
+After viewing the data graphically, it appears that there are more NO to the favor side than yes, while there  are more NO to the oppose side than yes.
+
+>Gun Ownership vs.God
+```{r}
+source("makeTables.R")
+source("someplots.R")
+barchartGC(god_table,type="percent")
+```
+
+It looks like that there is a relationship between the gun ownership and God.Those in NO group are highly opposing the gun ownership.Those in MAYBE and YES graph for NO group are also highly opposing the gun ownership as well.For YES group, it appears that it also have the same percentage for no,maybe and yes graph. However, the NO graph has high majority. 
+
+>Gun Ownership vs. Race
+```{r}
+source("makeTables.R")
+source("someplots.R")
+barchartGC(race_table,type="percent")
+```
+
+It appears that for BLACK and OTHER, more believe in NO gun ownership than YES. For WHITE, more appear in NO group than YES too.
+
+>Gun Ownership vs. Sex
+```{r}
+source("makeTables.R")
+source("someplots.R")
+barchartGC(sex_table,type="percent")
+```
+
+It appears that between male and female, They both are likely don`t believe in gun ownership.However there are more majority in female in NO group than male base on graphical result.
+
+Gun ownership vs. Political Views
+```{r}
+source("makeTables.R")
+source("someplots.R")
+barchartGC(polviews_table,type="percent")
+```
+
+It appears that the Liberal are highly opposing the gun ownership.It has a vast majority of NO group on our graphical data. The Moderate and COnservative are likely not believe in gun ownership too. 
 
 ### Numerical Descriptive Results
 
