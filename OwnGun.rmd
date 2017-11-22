@@ -105,12 +105,61 @@ source("makeTables.R")
 source("someplots.R")
 barchartGC(polviews_table,type="percent")
 ```
-
-It appears that the Liberal are highly opposing the gun ownership.It has a vast majority of NO group on our graphical data. The Moderate and COnservative are likely not believe in gun ownership too. 
+It appears that the Liberal are highly opposing the gun ownership.It has a vast majority of NO group on our graphical data. The Mode
+rate and COnservative are likely not believe in gun ownership too. 
 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+>To view the results of our data numerically, we will use a makeTables.R using the rowPerc function from the tigerstats package.
+
+>Gun ownership vs.Cappun_table
+```{r}
+rowPerc(cappun_table)
+```
+
+Of those in the FAVOR group,41.44% are in YES in gun ownership, 58.56% in NO. that 
+Of those in the OPPOSE group,20.58% are YES in gun ownership,79.42% in NO.
+After viewing the data numerically, It appears that between FAVOR and OPPOSE,there are more percentage in NO gun ownership than YES for gun ownership.
+
+>Gun ownership vs. god_table
+```{r}
+rowPerc(god_table)
+```
+
+Of those in NO group,32.46% are YES in gun ownership,67.54% do not.
+Of those in MAYBE group,33.33% are YES in gun wonership,66.67% do not.
+Of those in YES group,33.05% are YES in gun ownership,66.95% do not.
+After viewing the data numerically, It appears that for YES, NO and MAYBE group has a large majority of NO in gun ownership.
+
+>Gun Ownerhip vs. race_table
+```{r}
+rowPerc(race_table)
+```
+
+Of those in the WHITE group,39.01% in YES in gun ownership,60.99% in NO for gun ownership.
+Of those in BLACK group,16.87% in YES in gun ownership,83.13% in NO for gun ownership.
+Of those in the OTHER group,13.93% in YES in gun ownership,86.07% are NO for gun ownership.
+After viewing the data numerically, IT appears that WHITE, BLACK and OTHER has a large majority in NO for gun ownership.
+
+>GUn Ownership vs. sex_table
+```{r}
+rowPerc(sex_table)
+```
+
+Of those in the MALE group,39.76% are YES in gun ownership,60.24% in NO for gun ownership.
+Of those in FEMALE group,27.32% are in YES for ownership,72.68% for NO in gun ownership.
+After viewing the data numerically,It appears that a high majority of MALE and FEMALE group are both have a high majority of NO for gun ownership.
+
+>Gun Owneship vs.polviews_table
+```{r}
+rowPerc(polviews_table)
+```
+
+Of those in MODERATE group,33.20% are YES in gun wonership,66.80 in NO for gun ownership.
+OF those in CONSERVATIVE group,42.17% are YES in gun ownership,57.83% in NO for gun ownership.
+After viewing the data numerically,It appears that those in Liberal group are overwhelmingly more likely to oppose in gun ownership and the MODERATE group as well as CONSERVATIVE group are also more likely not favor in gun ownership.
 
 # Inferential Results
 
