@@ -99,7 +99,7 @@ barchartGC(sex_table,type="percent")
 
 It appears that between male and female, They both are likely don`t believe in gun ownership.However there are more majority in female in NO group than male base on graphical result.
 
-Gun ownership vs. Political Views
+>Gun ownership vs. Political Views
 ```{r}
 source("makeTables.R")
 source("someplots.R")
@@ -114,7 +114,7 @@ rate and COnservative are likely not believe in gun ownership too.
 
 >To view the results of our data numerically, we will use a makeTables.R using the rowPerc function from the tigerstats package.
 
->Gun ownership vs.Cappun_table
+Gun ownership vs.Cappun_table
 ```{r}
 rowPerc(cappun_table)
 ```
@@ -164,7 +164,75 @@ After viewing the data numerically,It appears that those in Liberal group are ov
 # Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+>We will need to run the test using chisqtestGC function from the tigerstats package.We will run each test to see if what and who is more favor for gun ownership between our varibale such as capitol punishment, god, race, sex and political views.
 
+>Gun Ownership vs.cappun chi-square test:
+
+Let us begin by forming our two hypothesis:
+
+$H_0$: there is no relationship between gun ownership and the opinion about capital punishment.
+
+$H_A$: there is a relationship between gun ownership and opinion about capital punishment.
+
+```{r}
+chisqtestGC(cappun_table)
+```
+
+Our p-value is 0. This means the probablity of having a result like this data when null hypothesis is true. Since the p-value is too low we will reject the null hypothesis and conclude that there is a relationship between gun ownership and opinion about capital punishment.
+
+>Gun Ownership vs.God chi-square test:
+
+We will form our two hypothesis:
+
+$H_0$: there is no relationship between gun ownrship between gun ownership and belief in god.
+
+$H_A$: there is a relationship between gun ownership and the beief in god. 
+
+```{r}
+chisqtestGC(god_table)
+```
+
+Our p-value is 0.9739. This means the probability getting a result like this data is under conditions when the null hypothesis is true,is about 1 in 100(about 100%)This is higher a lil bit of NO for gun ownership(which is typically 5 percent mostly).Since p-value is not more than at 1, we will reject the null hypothesis and conclude that there is a relationship between god in gun ownership.
+
+>Gun Ownership vs.Race chi-square test :
+
+We will form our two hypothesis:
+
+$H_0$: there is no relationship between gun ownrship between gun ownership and race.
+
+$H_A$: there is a relationship between gun ownership and race.
+```{r}
+chisqtestGC(race_table)
+```
+
+Our p-value is 0. The chances of getting such a result are small if the hypothesis is true.We therefore choose to reject the null hypothesis.So it appears that gun ownership and race are related.
+
+>GUn Ownership vs.Sex chi-square test:
+
+We will form our two hypothesis:
+
+$H_0$: there is no relationship between gun ownership between gun ownership and sex.
+
+$H_A$: there is a relationship between gun ownership and sex. 
+
+```{r}
+chisqtestGC(sex_table)
+```
+
+Our p-value is 0. The chances of getting such a result are small if the null hypothesis is true. We therefore choose to reject the null hypothesis. So it appears that sex and gun ownership are related.
+
+>GUn Ownership vs.Political views chi-square test:
+
+We will form our two hypothesis:
+
+$H_0$: there is no relationship between gun ownrship between gun ownership and political views.
+
+$H_A$: there is a relationship between gun ownership and poitical views.
+```{r}
+chisqtestGC(polviews_table)
+```
+
+Our p-value is 0.The chance of getting such a result are so small if the null hypothesis is true. We therefore choose to reject the null hypothesis. So it appears that political views and gun ownership are related, with a higher level of political views leading to greater chance of NO in gun ownership.
 
 # Discussion and Conclusion
 
